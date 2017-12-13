@@ -1,21 +1,48 @@
+html {
+  background-color: green;
+}
 body {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vh;
   display: grid;
-  grid-template-columns: 1fr, auto, auto, 1fr;
+  margin: 0px;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   justify-content: center;
   align-items: center;
-  grid-gap: 1em;
   overflow-x: hidden;
+  background-color: gray;
+  grid-gap: 0px;
 }
 #butt {
-  grid-column: 2/3;
+  grid-column: 4;
+  grid-row: 5;
 }
-.square {
-  grid-column: 3/4;
+.square__magenta {
+  grid-column: 10;
+  grid-row: 4;
   background-color: magenta;
-  width: 5em;
+  width: 10em;
   height: 5em;
   transition: transform .6s cubic-bezier(.17,.67,.71,1.29);
+}
+.square__blue {
+  grid-column: 10;
+  grid-row: 5;
+  background-color: blue;
+  width: 10em;
+  height: 5em;
+  transition: transform .6s cubic-bezier(.17,.67,.71,1.29);
+  transition-delay: 0.3s;
+}
+.square__red {
+  grid-column: 10;
+  grid-row: 6;
+  background-color: red;
+  width: 10em;
+  height: 5em;
+  transition: transform .6s cubic-bezier(.17,.67,.71,1.29);
+  transition-delay: 0.66s;
 }
 .square__extend {
   transform: translateX(50vw);
